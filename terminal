@@ -1,0 +1,2 @@
+make interactive (reverce shell)==>
+                stty raw -echo
