@@ -1,3 +1,5 @@
 *** Add to host file ***
 ==>
 $ host -l cronos.htb 10.10.10.13
+
+add new domains--->
