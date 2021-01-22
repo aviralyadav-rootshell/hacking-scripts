@@ -1,0 +1,10 @@
+
+way 1 ==>
+    enum4linux IP
+way 2 ==>
+    smbclient -L ////<IP>
+    smbclient -U "" <IP>
+
+===> when rpc only
+
+rpcclient -U “” -N 10.10.10.11
