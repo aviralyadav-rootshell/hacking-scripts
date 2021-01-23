@@ -1,0 +1,1 @@
+ssh mindy@10.10.10.51 -t "bash --noprofile"
