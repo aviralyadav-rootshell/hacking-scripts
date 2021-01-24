@@ -1,0 +1,13 @@
+About ==>
+
+cat /etc/knockd.conf
+
+
+Knowking the POrts
+
+nmap -Pn --host-timeout 201 --max-retries 0 -p 571,290,911 10.10.10.43
+
+
+If ssh opens, Have ssh Keys the ==> 
+
+nmap -Pn --host-timeout 201 --max-retries 0 -p 571,290,911 10.10.10.43 && ssh -i sshkey.key amrois@10.10.10.43 
