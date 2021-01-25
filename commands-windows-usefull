@@ -1,0 +1,14 @@
+
+
+dir >
+        :>dir ---list files
+        :>dir /a     --list all files
+        :>dir /q     -- list files with permissions
+        
+        change perms
+        
+        :> icalcs  /grant <uname>:(F)                    :(F)  for full perms
+        
+        
+        
+        
