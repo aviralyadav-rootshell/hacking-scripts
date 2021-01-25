@@ -7,7 +7,7 @@ dir >
         
         change perms
         
-        :> icalcs  /grant <uname>:(F)                    :(F)  for full perms
+        :> icacls  /grant <uname>:(F)                    :(F)  for full perms
         
         
         
