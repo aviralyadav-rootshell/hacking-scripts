@@ -1,3 +1,7 @@
 using grep
 
 grep –binary-files=text –context=100 ‘root’ /dev/sdb > /tmp/root.txt
+
+OR just ==>
+
+cat /dev/sdb
