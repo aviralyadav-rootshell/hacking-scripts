@@ -3,3 +3,7 @@
 $ host -l cronos.htb 10.10.10.13
 
 add new domains--->
+
+
+
+dig axfr @<DNS_IP> 
