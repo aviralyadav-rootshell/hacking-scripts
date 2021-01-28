@@ -8,3 +8,10 @@ way 2 ==>
 ===> when rpc only
 
 rpcclient -U “” -N 10.10.10.11
+
+
+
+Better Way ==>
+
+smbclient -L ////10.10.10.134        to list the shares ***
+smbclient //10.10.10.134/Backups     to go inside a share this time 'Backups'
