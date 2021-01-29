@@ -1,0 +1,13 @@
+mountion VHD files to linux
+
+https://medium.com/@klockw3rk/mounting-vhd-file-on-kali-linux-through-remote-share-f2f9542c1f25
+
+steps :
+1 $ mount -t cifs  //10.10.10.134/Backups /mnt/bastion/
+ or mount -t cifs -o username=guest //10.10.10.134/Backups /mnt/bastion/
+ 
+ 
+ now VHD files ==>                                 need --> apt-get install libguestfs-tools,apt-get install cifs-utils
+ 
+ 2 $ guestmount –add 9b9cfbc4-369e-11e9-a17c-806e6f6e6963.vhd –inspector –ro /opt/HTB/bastion/windowsvhd/ -v
+                    <---------------- VHD Disk-------------->         
