@@ -1,1 +1,2 @@
 fcrackzip tool
+fcrackzip -D -p /usr/share/wordlists/rockyou.txt -u encodedfile
