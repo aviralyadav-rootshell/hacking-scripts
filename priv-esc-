@@ -9,7 +9,8 @@ sion
 windows old versions --
 check   ==>     whoami /priv
                if  ==>  SeImpersonatePrivilege    --> enabled the use impersionate
-                         churrasco.exe  <command>              
+                         churrasco.exe  <command>   
+                         or churrasco.exe -d <file.exe>
                
                
  
