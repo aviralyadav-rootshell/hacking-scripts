@@ -28,4 +28,5 @@ UPLOAD
 
 DOWNLOAD
 
-          scp user@host:/path/to/source-file /path/to/destination-folder
+                    ==>   scp Administrator@10.10.229.156:/C:/Users/Administrator/ad/GPO-Report.html    ~/THM/ad_postE/                            * working
+                                            *possible mistake can be in / to \
